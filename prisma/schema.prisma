@@ -1,0 +1,76 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Admins {
+  id                  String   @id @map("_id")
+  email               String   @unique @default("")
+  adminEmail          String   @default("")
+  vat                 String   @default("")
+  iban                String   @default("")
+  firstName           String   @default("")
+  companyName         String   @default("")
+  operationAddress    String   @default("")
+  operationPostCode   String   @default("")
+  operationProvince   String   @default("")
+  operationCity       String   @default("")
+  officeAddress       String   @default("")
+  officePostCode      String   @default("")
+  officeCity          String   @default("")
+  officeProvince      String   @default("")
+  website             String   @default("")
+  phoneNumber         String   @default("")
+  mobileNumber        String   @default("")
+  notes               String   @default("")
+  isVerified          Boolean  @default(false)
+  isVerifiedBySA      Boolean  @default(false)
+  isTosAccepted       Boolean  @default(false)
+  role                String   @default("")
+}
+
+model Customer {
+  id                  String   @id @default(auto()) @map("_id") @db.ObjectId
+  agencyId            String   @default("")
+  email               String   @default("")
+  vat                 String   @default("")
+  iban                String   @default("")
+  firstName           String   @default("")
+  companyName         String   @default("")
+  operationAddress    String   @default("")
+  operationPostCode   String   @default("")
+  operationProvince   String   @default("")
+  operationCity       String   @default("")
+  officeAddress       String   @default("")
+  officePostCode      String   @default("")
+  officeCity          String   @default("")
+  officeProvince      String   @default("")
+  phoneNumber         String   @default("")
+  mobileNumber        String   @default("")
+  notes               String   @default("")
+  isActive            Boolean  @default(true)
+  electricitySelected Boolean  @default(false)
+  gasSelected         Boolean  @default(false)
+  fibreSelected       Boolean  @default(false)
+  files               Json
+  pdr                 String   @default("")
+  pod                 String   @default("")
+  pod_transfer        String   @default("")
+  pdr_transfer        String   @default("")
+  pod_status          String   @default("")
+  pdr_status          String   @default("")
+  fibra_status        String   @default("")
+  fibra_transfer      String   @default("")
+  postalBulletin      Boolean  @default(false)
+  fiberMobileNumber   String   @default("")
+}
