@@ -1,4 +1,4 @@
-const APP_URL = 'https://cheerful-sorbet-b08adf.netlify.app/dashboard/account'
+const APP_URL = 'https://resplendent-blini-dbe0ce.netlify.app/dashboard/account'
 
 const agencyRegisterTemplate = ({ data }) => `
   <div style="max-width: 600px; width: 100%; margin: 20px auto; background: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border: 1px solid #ddd;">
