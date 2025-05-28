@@ -9,9 +9,8 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Popover from '@mui/material/Popover';
 import Typography from '@mui/material/Typography';
-const { GearSix: GearSixIcon } = require('@phosphor-icons/react/dist/ssr/GearSix');
-const { SignOut: SignOutIcon } = require('@phosphor-icons/react/dist/ssr/SignOut');
-const { User: UserIcon } = require('@phosphor-icons/react/dist/ssr/User');
+import {SignOut as SignOutIcon} from '@phosphor-icons/react/dist/ssr/SignOut';
+import {User as UserIcon} from '@phosphor-icons/react/dist/ssr/User';
 
 import { paths } from '@/paths';
 

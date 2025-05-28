@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
 import { usePathname } from 'next/navigation';
-const { List: ListIcon } = require('@phosphor-icons/react/dist/ssr/List');
+import {List as ListIcon} from '@phosphor-icons/react/dist/ssr/List';
 import { usePopover } from '@/hooks/use-popover';
 import { MobileNav } from './mobile-nav';
 import { UserPopover } from './user-popover';

@@ -13,7 +13,7 @@ const pdfUrl = `https://ik.imagekit.io/qyamapuh1/pdf/COMPARATIVA_PREZZI_DICEMBRE
 import { authenticator, purgeCache } from '@/helpers/imagekit';
 import Snackbar from '@mui/material/Snackbar';
 
-export default function Information () {
+export function Information () {
     const [role, setRole] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
     const [snackbarOpen, setSnackbarOpen] = useState<boolean>(false);
@@ -78,7 +78,7 @@ export default function Information () {
           }
         </div>
 
-        <PdfViewer pdfUrl={pdfUrl} />
+        {/*<PdfViewer pdfUrl={pdfUrl} />*/}
 
         <Snackbar
             anchorOrigin={{ vertical: 'top', horizontal: 'right' }}

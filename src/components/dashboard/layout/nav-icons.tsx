@@ -1,7 +1,7 @@
-const { User: UserIcon } = require('@phosphor-icons/react/dist/ssr/User');
-const { Users: UsersIcon } = require('@phosphor-icons/react/dist/ssr/Users');
-const { Info: Info } = require('@phosphor-icons/react/dist/ssr/Info');
-const { Coins: Coins } = require('@phosphor-icons/react/dist/ssr/Coins');
+import {User as UserIcon} from '@phosphor-icons/react/dist/ssr/User';
+import {Users as UsersIcon} from '@phosphor-icons/react/dist/ssr/Users';
+import {Info as Info} from '@phosphor-icons/react/dist/ssr/Info';
+import {Coins as Coins} from '@phosphor-icons/react/dist/ssr/Coins';
 
 export const navIcons = {
   user: UserIcon,

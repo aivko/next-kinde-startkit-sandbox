@@ -77,7 +77,7 @@ export default function About () {
           }
         </div>
 
-        <PdfViewer pdfUrl={pdfUrl} />
+        {/*<PdfViewer pdfUrl={pdfUrl} />*/}
 
         <Snackbar
             anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
